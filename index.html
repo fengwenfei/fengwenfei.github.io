@@ -2,62 +2,113 @@
  <html>
      <head>
          <meta charset="UTF-8">
-         <title>你知道吗</title>
+         <title>欢迎光临</title>
          <style type="text/css">
-             form
-             {
+          *{
+           margin:0;
+           padding:0;
+          }
+          body {
+             
                  width:100%;
-                 height:700px;
+                 height:100px;
                   margin-top: 0px;
-                 background:#008B8B;
-             }
-             div
-             {
-                 display:inline-block;
-                 padding-top: 80px;
-                 padding-right: 20px;
-                 
-             }
-             h2
-             {
-                
+                 background:pink;
           
-                 color:black;
              }
-             h3
-             {
-                
-           
-                 color:yello;
+          video{
+          height:100%;
+           width:100%;
+           position:absolute;
+           right:0px;
+           bottom:0px;
+           z-index:-99;
+          
+          }
+           div{
+            size:20px;
+               color:#foo;
              }
-            h4
-             {
-                 color:blue;
+            p{size:20px;
+                color:#oof;
              }
-        
+        .heart-eye {
+	position:absolute;
+	animation:pulse 1s ease-out infinite;
+}
+.heart {
+	display:block;
+	width:16px;
+	height:16px;
+	background:#e25d5d;
+	transform:rotate(-45deg);
+}
+.heart:before,.heart:after {
+	content:"";
+	position:absolute;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	background-color:#e25d5d;
+}
+.heart:before {
+	top:-8px;
+	left:0;
+}
+.heart:after {
+	left:8px;
+	top:0;
+}
+@keyframes pulse {
+	30% {
+	transform:scale(1.2,1.2);
+}
+70% {
+	transform:scale(1,1);
+}
+}
          </style>
+      
+      <script>
+       $(function(){
+       var heart = document.querySelector('.heart-eye');
+       console.log(heart);
+ 
+      document.onmousemove = function(e) {
+     heart.style.top = 20 + e.pageY + 'px';
+     heart.style.left = 30 + e.pageX + 'px';
+     }
+       }
+       </script>
      </head>
      <body>
-      <form>
+      <p align="left" > 哇塞，你好：</p>
              <center>
+              <audio src="http://p21.72djapp.cn/m4adj/2014/7210/3005/1238.m4a" style="display:none" autoplay controls></audio>
              <div>
-             <h3>
-                  一定要想清楚<br/>
-              自已爱做什么事
-            </h3>
-              <h3>
-                  想过什么样的生活<br/>
-               然后以怎么样的方式和途径去实现它
-            </h3>
-              <h2>
-                  若无后悔先修己，<br/>
-               各有前因莫羡人。
-            </h2>
-             
+              欢迎进入我的个人主页<br/>
+              等呀等，盼呀盼<br/>
+              翻来覆去，夜不能寐<br/>
+              今日得愿<br/>
+              多余的话就不说了<br/>
+              我真是太高兴了<br/>
+              哈哈哈哈哈哈<br/>
+              早已备好茶，香茗，音乐<br/>
+              既然来了<br/>
+              那就不要走了<br/>
+              
+                <span class="heart-eye">
+        <span class="heart"></span>
+      </span>
              </div>
+              
+            
+              
+              
              </center>
        <p align="right" color="green">-冯文飞</p>
-      </form>
+  <video id="video_cover" src=" https://img-baofun.zhhainiao.com/market/97ba6b60662ab4f31ef06cdf5a5f8e94_preview.mp4"
+         autoplay="autoplay" loop="loop" muted="muted" ></video>
      </body>
  </html>
 
