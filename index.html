@@ -6,14 +6,7 @@
          <title>欢迎光临</title>
          <style type="text/css">
      
-          body {
-             
-                 width:100%;
-                 height:100%;
-                 
-                 background:pink;
-          
-             }   
+         
           video{
           height:100%;
            width:100%;
@@ -24,16 +17,24 @@
           
           }
            div{
-        
-               color:#foo;
+                  color:#foo;
              }
             p{
                 color:#oof;
              }
 
          </style>
-      
-    
+      <script type="text/javascript">
+	      
+		 function changeColor() {
+		       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+		      document.body.style.backgroundColor = "#" + randomColor;
+		  }
+		setInterval(function () {
+				    changeColor();
+		 }, 1000)
+
+     </script>
      </head>
      <body>
      
@@ -137,7 +138,7 @@
 
 
 
-22.我后来遇到过这样一个人，他总会每天缠着我说话，即使我只回几句嗯嗯哦哦的他都不会不理我，但是不知道为什么我就是没办法喜欢他，即使我在他身上看到了曾经的自己。<br/>
+22.我后来遇到过这样一个人，他总会每天缠着我说话，即使我只回几句嗯嗯哦哦的他都不会不理我，<br/>但是不知道为什么我就是没办法喜欢他，即使我在他身上看到了曾经的自己。<br/>
 
 
 
