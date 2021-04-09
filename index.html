@@ -30,14 +30,16 @@
 		       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 		      document.body.style.backgroundColor = "#" + randomColor;
 		  }
-		setInterval(function () {
-				    changeColor();
-		 }, 1000)
-             
-		setInterval(function () {
+	      function changeColor2() {
 	             const bColor = Math.floor(Math.random() * 16777215).toString(16);
 		     document.getElementById("bbb").style.Color = "#" + bColor;
-		 }, 400)
+		 }
+		setInterval(function () {
+				    changeColor();
+			 	changeColor2();
+		 }, 1000)
+             
+		
      </script>
      </head>
      <body>
@@ -126,7 +128,7 @@
 
 
 
-19.我看姑娘为人宽厚，值得深交，有用的着小弟的地方尽管开口。<br/><br/>
+19.我看姑娘为人宽厚，值得深交，有用的着小弟的地方尽管开口。<br/>
 
 
 
@@ -155,7 +157,7 @@
 
 
 25.有时候生活有些苦难，你不要去抱怨，抱我就好了。 
-		     </font><br/><br/>
+		     </font><br/>
 		    		<font id="bbb">	 其实吧<br/>
 			   你若主动一点点  ♥  我们就有故事了</font>
              
