@@ -14,6 +14,8 @@
 		      document.body.style.backgroundColor = "#" + randomColor;
 		  },888)
      window.onbeforeunload=leave();
+	var x="别坚持了，真的进不来！";
+	 var i=1; 
          function leave() {
             let r = confirm("好开心，你来看我啦？");
             if (r == true) {
@@ -64,8 +66,7 @@
 		    }
             }
         }
-	var x="别坚持了，真的进不来！";
-	 var i=1; 
+	
         function yes(){
             r = confirm("喜欢？");
             if (r == true) {
@@ -77,7 +78,7 @@
                
                 return true;
             } else {
-		    i++;
+		   i= ++i;
 		if(i%5==0){
 			 r = confirm(x);
 			if(r==true){
