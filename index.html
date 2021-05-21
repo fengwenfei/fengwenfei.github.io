@@ -15,9 +15,9 @@
 		  },888)
      window.onbeforeunload=leave();
          function leave() {
-            let r = confirm("你要走了吗？");
+            let r = confirm("你来啦？");
             if (r == true) {
-                r = confirm("你喜欢我吗？");
+                r = confirm("喜欢我吗？");
                 if (r == true) {
                     alert("我也喜欢你");
                     return true;
@@ -30,8 +30,8 @@
                     }
                 }
             } else {
-                alert("好的，多呆会");
-                return false;
+		 alert("那拜拜！");
+              window.close;
             }
         }
         function yes(){
