@@ -13,33 +13,45 @@
 		       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 		      document.body.style.backgroundColor = "#" + randomColor;
 		  },888)
-      window.onbeforeunload =before;    
-    function before(){    
-        var r=confirm("你要走了吗？");
-	if (r==true){
- 		  var r=confirm("你喜欢我吗？");
-		  if (r==true){
- 			 alert("那我们在一起吧，记得常来看看");
-	 	  }else {
-  			var r=confirm("好吧？那拜拜");
-			if (r==true){
- 		 		alert("一路走好");
-	 	 	 }else {
-  				var r=confirm("怎么在犹豫？");
-				if (r==true){
- 					 alert("什么都别说了，来找我吧");
- 				 }else{
-					  alert("是我想多了！拜拜！");
-				 }
-			 }	 
- 		 }
-	 }else {
-  		alert("好的，多呆会");
- 	 }
-  
-    }   
-		
-    
+     window.onbeforeunload=leave();
+         function leave() {
+            let r = confirm("你要走了吗？");
+            if (r == true) {
+                r = confirm("你喜欢我吗？");
+                if (r == true) {
+                    alert("我知道了");
+                    return true;
+                } else {
+                    r = confirm("喜欢我？");
+                    if (r == true) {
+                        alert("这才对嘛，我也喜欢你");
+                        return false
+                    } else {
+                       no();
+                    }
+                }
+            } else {
+                alert("好的，多呆会");
+                return false;
+            }
+        }
+        function yes(){
+            r = confirm("喜欢");
+            if (r == true) {
+                alert("我也喜欢");
+                return true;
+            } else {
+                no();
+            }
+        }
+        function no(){
+            r = confirm("不喜欢");
+            if (r == true) {
+                yes();
+            } else {
+                yes();
+            }
+        }
      </script>
      </head>
      <body>
