@@ -9,40 +9,33 @@
 
          </style>
       <script type="text/javascript">
-		 function changeColor() {
+		setInterval(function () {changeColor(){
 		       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 		      document.body.style.backgroundColor = "#" + randomColor;
-		  }
-		setInterval(function () {changeColor();},888)
+		  };},888)
       
-    window.onbeforeunload =before;   
-    window.onunload = now;   
+    window.onbeforeunload =before;    
     function before(){    
         var r=confirm("你要走了吗？");
 	if (r==true){
  		  var r=confirm("你喜欢我吗？");
-		if (r==true){
- 		 alert("那我们在一起吧");
-	 	 }else {
-  		var r=confirm("好吧？那拜拜");
-		if (r==true){
- 		 alert("一路走好");
-	 	 }else {
-  		var r=confirm("怎么在犹豫？");
-		if (r==true){
- 		 alert("什么都别说了，来找我吧");
- 		 }else{
-			  alert("我想多了！");
- 		 }
-	  }else {
+		  if (r==true){
+ 			 alert("那我们在一起吧，记得常来看看");
+	 	  }else {
+  			var r=confirm("好吧？那拜拜");
+			if (r==true){
+ 		 		alert("一路走好");
+	 	 	 }else {
+  				var r=confirm("怎么在犹豫？");
+				if (r==true){
+ 					 alert("什么都别说了，来找我吧");
+ 				 }else{
+					  alert("是我想多了！拜拜！");
+ 			 }
+	 }else {
   		alert("好的，多呆会");
  	 }
   
-    }   
-       
-    function now(){   
-       
-        alert("谢谢光临");   
     }   
 		
      </script>
