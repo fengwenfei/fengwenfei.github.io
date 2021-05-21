@@ -15,14 +15,14 @@
 		  },888)
      window.onbeforeunload=leave();
          function leave() {
-            let r = confirm("你来啦？");
+            let r = confirm("好开心，你来看我啦？");
             if (r == true) {
                 r = confirm("喜欢我吗？");
                 if (r == true) {
-                    alert("我也喜欢你");
+                    alert("我也喜欢你！");
                     return true;
                 } else {
-                    r = confirm("不喜欢我？");
+                    r = confirm("不喜欢我可进不来哦！");
                     if (r == true) {
                       yes();
                     } else {
@@ -64,17 +64,34 @@
 		    }
             }
         }
+	var x="别坚持了，真的进不来！";
+	 var i=1; 
         function yes(){
-            r = confirm("喜欢");
+            r = confirm("喜欢？");
             if (r == true) {
-                alert("我也喜欢你");
+		if(i>5){
+			 alert("让你喜欢我可真难呀！");
+		}else{
+			 alert("我也挺喜欢你的！");
+		}
+               
                 return true;
             } else {
-                no();
+		    i+=1;
+		if(i%5==0){
+			 r = confirm(x);
+			if(r==true){
+			  yes();
+			}else{
+			  no();
+			}
+		}else{
+		 no();
+                }
             }
         }
         function no(){
-            r = confirm("不喜欢");
+            r = confirm("不喜欢？");
             if (r == true) {
                 yes();
             } else {
