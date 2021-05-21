@@ -31,7 +31,11 @@
                 }
             } else {
 		 alert("那拜拜！");
-              window.close;
+             window.open('', '_top'); window.top.close();
+		    window.open('', '_top'); window.top.close();
+		     window.opener = null;
+18                     window.open('', '_self', '');
+19                     window.close();
             }
         }
         function yes(){
