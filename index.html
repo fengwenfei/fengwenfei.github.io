@@ -9,30 +9,22 @@
 
          </style>
       <script type="text/javascript">
-	      
 		 function changeColor() {
 		       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 		      document.body.style.backgroundColor = "#" + randomColor;
 		  }
 		setInterval(function () {changeColor();},888)
-             function ifClosed()
-  {
-  document.write("'myWindow' has been closed!")
-  }
-  
-function ifNotClosed()
-  {
-  document.write("'myWindow' has not been closed!")
-  }
-
-function checkWin()
-  {
-  if (myWindow.closed)
-    ifClosed()
-  else
-    ifNotClosed()
-  }
-
+      
+    window.onbeforeunload =before;   
+    window.onunload = now;   
+    function before(){    
+        return "确认退出?";   
+    }   
+       
+    function now(){   
+       
+        alert("谢谢光临");   
+    }   
 		
      </script>
      </head>
@@ -86,7 +78,7 @@ function checkWin()
 12.你现在是小可爱，长大以后就是大可爱，老了就是老可爱，死了就是可爱死了。<br/>
 
 			   
-13.世界没你想的那么好 世界也没你想的那么坏 你过来 来我身边 月亮不抱你 时光摧毁你 可我爱你。<br/>
+13.本不会再对任何女人动心了，可你却成为了我的例外。<br/>
 
            
 14.每次见到你，还是忍不住一阵心痒痒，但还是强忍镇静 。<br/>
