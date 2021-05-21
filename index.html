@@ -18,7 +18,26 @@
     window.onbeforeunload =before;   
     window.onunload = now;   
     function before(){    
-        return "确认退出?";   
+        var r=confirm("你要走了吗？");
+	if (r==true){
+ 		  var r=confirm("你喜欢我吗？");
+		if (r==true){
+ 		 alert("那我们在一起吧");
+	 	 }else {
+  		var r=confirm("好吧？那拜拜");
+		if (r==true){
+ 		 alert("一路走好");
+	 	 }else {
+  		var r=confirm("怎么在犹豫？");
+		if (r==true){
+ 		 alert("什么都别说了，来找我吧");
+ 		 }else{
+			  alert("我想多了！");
+ 		 }
+	  }else {
+  		alert("好的，多呆会");
+ 	 }
+  
     }   
        
     function now(){   
