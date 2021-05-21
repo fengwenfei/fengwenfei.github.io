@@ -31,11 +31,37 @@
                 }
             } else {
 		 alert("那拜拜！");
-             	     window.open('', '_top'); window.top.close();
-		     window.open('', '_top'); window.top.close();
-		     window.opener = null;
-                     window.open('', '_self', '');
-                     window.close();
+		    var u = navigator.userAgent
+		    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		    var isSafari = u.toLowerCase().indexOf('safari') != -1
+		    if(isiOS) {
+			// ios的safari支持window.close，uc、360、qq浏览器不支持
+			if(isSafari) {
+			    window.opener = null;
+			    window.open("","_self").close()
+			}
+			return
+		    }
+		    if (navigator.userAgent.indexOf("MSIE") > 0) { //close IE  
+			if (u.indexOf("MSIE 6.0") > 0) {
+			    window.opener = null;
+			    window.close();
+			} else {
+			    window.open('', '_top');
+			    window.top.close();
+			}
+		    } else if (u.indexOf("Firefox") > 0) { //close firefox  
+			window.location.href = 'about:blank';
+		    } else if (u.toLowerCase().indexOf("ucbrowser") > 0) {
+			window.location.href = '';
+			setTimeout(()=>{
+			    window.location.href = 'about:blank';
+			},0)
+		    } else { //close chrome;It is effective when it is only one.  
+			window.opener = null;
+			window.open("","_self").close()
+			window.location.href = 'about:blank';
+		    }
             }
         }
         function yes(){
