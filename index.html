@@ -19,15 +19,14 @@
             if (r == true) {
                 r = confirm("你喜欢我吗？");
                 if (r == true) {
-                    alert("我知道了");
+                    alert("我也喜欢你");
                     return true;
                 } else {
-                    r = confirm("喜欢我？");
+                    r = confirm("不喜欢我？");
                     if (r == true) {
-                        alert("这才对嘛，我也喜欢你");
-                        return false
+                      yes();
                     } else {
-                       no();
+                      yes();
                     }
                 }
             } else {
@@ -38,7 +37,7 @@
         function yes(){
             r = confirm("喜欢");
             if (r == true) {
-                alert("我也喜欢");
+                alert("我也喜欢你");
                 return true;
             } else {
                 no();
