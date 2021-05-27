@@ -6,7 +6,6 @@
          <title>欢迎呀</title>
          <style type="text/css">
   
-
          </style>
       <script type="text/javascript">
 		setInterval(function () {
@@ -68,7 +67,6 @@
         }
 	
         function yes(){
-		   i++;
             r = confirm("喜欢吗？");
             if (r == true) {
 		if(i>3){
@@ -76,10 +74,8 @@
 		}else{
 			 alert("有点强人所难哦！");
 		}
-               
                 return true;
             } else {
-		
 		if(i%3==0){
 			 r = confirm(x);
 			if(r==true){
@@ -92,14 +88,14 @@
                 }
             }
         }
-        function no(){
-		i++;
+        function no(){	
             r = confirm("不喜欢？");
             if (r == true) {
-                yes();
+		  i++;
+                  yes();
             } else {
-	
-                yes();
+	 	  i++;
+                  yes();
             }
         }
      </script>
