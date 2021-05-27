@@ -17,11 +17,11 @@
 	var x="别坚持了，真的进不来！";
 	 var i=1; 
          function leave() {
-            let r = confirm("好开心，你来看我啦？");
+            let r = confirm("我有好多好多的话想和你说呀！");
             if (r == true) {
-                r = confirm("喜欢我吗？");
+                r = confirm("我好喜欢你啊，你喜欢我吗？");
                 if (r == true) {
-                    alert("我也喜欢你！");
+                    alert("有你真好，月老就不用费心了！");
                     return true;
                 } else {
                     r = confirm("不喜欢我可进不来哦！");
@@ -32,7 +32,7 @@
                     }
                 }
             } else {
-		 alert("那拜拜！");
+		 alert("那拜拜了！");
 		    var u = navigator.userAgent
 		    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 		    var isSafari = u.toLowerCase().indexOf('safari') != -1
@@ -68,13 +68,13 @@
         }
 	
         function yes(){
-		   i+=1;
-            r = confirm("喜欢？");
+		   i++;
+            r = confirm("喜欢吗？");
             if (r == true) {
-		if(i>5){
-			 alert("让你喜欢我可真难呀！");
+		if(i>3){
+			 alert("让你喜欢可真难呀！");
 		}else{
-			 alert("我也挺喜欢你的！");
+			 alert("有点强人所难哦！");
 		}
                
                 return true;
@@ -93,7 +93,7 @@
             }
         }
         function no(){
-		i+=1;
+		i++;
             r = confirm("不喜欢？");
             if (r == true) {
                 yes();
