@@ -150,6 +150,31 @@ body{
                  img.style.position="absolute";
 				 document.body.appendChild(img);
               })
+	      
+	          window.onload = function(){
+			//屏蔽键盘事件
+			document.onkeydown = function (){
+				var e = window.event || arguments[0];
+				//F12
+				if(e.keyCode == 123){
+					return false;
+				//Ctrl+Shift+I
+				}else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+					return false;
+				//Shift+F10
+				}else if((e.shiftKey) && (e.keyCode == 121)){
+					return false;
+				//Ctrl+U
+				}else if((e.ctrlKey) && (e.keyCode == 85)){
+					return false;
+				}
+			};
+			//屏蔽鼠标右键
+			document.oncontextmenu = function (){
+				return false;
+			}
+		}
+
      </script>
      </head>
      <body>
@@ -201,8 +226,8 @@ body{
 12.爱意积累太多，见面是唯一的解决办法。 <br/>
                   </font>
 <div  position="absolute">
- <div id="one"> <marquee behavior="alternate" direction="left" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >山水风月皆下等</marquee></div>
- <div id="two"><marquee behavior="alternate" direction="right" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >唯有眼前心上人</marquee> </div>
+ <div id="one"  position="absolute"> <marquee behavior="alternate" direction="left" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >山水风月皆下等</marquee></div>
+ <div id="two"  position="absolute"><marquee behavior="alternate" direction="right" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >唯有眼前心上人</marquee> </div>
 </div>		     
                    <font color="red" ><br>
 			   
