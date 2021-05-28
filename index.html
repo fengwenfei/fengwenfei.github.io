@@ -57,12 +57,12 @@ body{
          function leave() {
             let r = confirm("我有好多好多的话想和你说呀！");
             if (r == true) {
-                r = confirm("我好喜欢你啊，你喜欢我吗？");
+                r = confirm("我好喜欢你，你对我有好感吗？");
                 if (r == true) {
-                    alert("有你真好，月老就不用费心了！");
+                    alert("嘻嘻，有你真好！");
                     return true;
                 } else {
-                    r = confirm("不喜欢我可进不来哦！");
+                    r = confirm("没有可进不来哦！");
                     if (r == true) {
                       yes();
                     } else {
@@ -106,12 +106,12 @@ body{
         }
 	
         function yes(){
-            r = confirm("喜欢吗？");
+            r = confirm("有？");
             if (r == true) {
 		if(i>3){
 			 alert("让你喜欢可真难呀！");
 		}else{
-			 alert("有点强人所难哦！");
+			 alert("哈哈，有点强人所难啊！");
 		}
                 return true;
             } else {
@@ -128,7 +128,7 @@ body{
             }
         }
         function no(){	
-            r = confirm("不喜欢？");
+            r = confirm("没有？");
             if (r == true) {
 		  i++;
                   yes();
