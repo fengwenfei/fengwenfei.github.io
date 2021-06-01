@@ -151,7 +151,29 @@ body{
                  img.style.position="absolute";
 				 document.body.appendChild(img);
               })
-	      
+	       var height=document.documentElement.clientHeight;
+           
+             var a=0;
+                var speed=5;
+                 function codefans(){  
+                       
+                    var box=document.getElementsByClassName('div1');
+                    if(box.length>a){
+                                console.log(box);
+                            function change(){
+                                if(box[a].offsetTop>height-25){
+                                    clearInterval(stop);
+                                    a+=1;
+                                }
+                                box[a].style.top = box[a].offsetTop + speed + "px";
+                              
+                            }             
+                         
+                         var stop=   setInterval(change,88);
+                     }
+                 }
+              setInterval(codefans,4000);
+           
 	          window.onload = function(){
 			//屏蔽键盘事件
 			document.onkeydown = function (){
