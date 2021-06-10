@@ -61,11 +61,11 @@ body{
          function leave() {
             let r = confirm("你是姑娘吗？ (￣﹁￣)");
             if (r == true) {
-			r = confirm("心里话，你要看啊？ *\(^_^)/*");
+			r = confirm("哥的心里话，你要看啊？ *\(^_^)/*");
 			if (r == true) {
-				    r = confirm("我会耍流氓哦！ ≧◇≦");
+				    r = confirm("看了，我会耍流氓哦！ ≧◇≦");
 				    if (r == true) {
-				     	 alert("嘻嘻！有你真好 づ￣ 3￣)づ ");
+				     	 alert("嘻嘻！等着呀 づ￣ 3￣)づ ");
 					 yes();
 				    } else {
 					    r = confirm("这么胆小，还是别看了 (︶︿︶)");
@@ -174,8 +174,28 @@ body{
 		      document.getElementById("yun1").style.display='' ;
 	      }
 	      setTimeout( duo1, 20000); 
+	      var aa=1;
+	      var bb="11.别问我有多喜欢你，春梦对象都是你。<br/>
+		   			   
+           
+			12.以前只知道想要活下去，但不知道为什么要活下去，现在我知道了，就是想要和你一起活下去 。<br/>
+
+
+			13.世界上总有一个人满足我对女人的所有幻想，那个人就是你。 <br/>
+
+
+			14.想给你借个未来，有你的温情和我全部的热爱。 <br/>"
+	      function lai(){
+		     aa+=1;
+		      document.getElementById("yun2").val=bb.substring(0,aa);
+		        if(aa=bb.length){
+                                    clearInterval(stop);  
+                                }
+	      }
 	      function duo2(){
+		      
 		      document.getElementById("yun2").style.display='' ;
+		      setInterval(lai,500);
 	      }
 	      setTimeout( duo2, 30000); 
            
@@ -237,19 +257,19 @@ body{
           <span id="yun1" class="span1" style="display:none">  <br/>
 
 
-1.最温柔的月光，也敌不过，你转瞬的回眸；最柔媚的春风，也敌不过，你绽放的嘴角。<br/>
+6.最温柔的月光，也敌不过，你转瞬的回眸；最柔媚的春风，也敌不过，你绽放的嘴角。<br/>
 
 
-2.你现在是小可爱，长大以后就是大可爱，老了就是老可爱，死了就是可爱死了。<br/>
+7.你现在是小可爱，长大以后就是大可爱，老了就是老可爱，死了就是可爱死了。<br/>
 		    
 		    
-3.我生来执拗，善恶分明，所以我喜欢你，不是一时兴起，也不是心口不一。<br/>
+8.我生来执拗，善恶分明，所以我喜欢你，不是一时兴起，也不是心口不一。<br/>
 		    
 		    
-4.我的愿望很少，其中之一就是想和你过一辈子。 <br/>
+9.我的愿望很少，其中之一就是想和你过一辈子。 <br/>
 		    
 		    
-5.爱意积累太多，见面是唯一的解决办法。<br/>
+10.爱意积累太多，见面是唯一的解决办法。<br/>
 		    
                  </span> <br/>
 <div  >
@@ -259,16 +279,7 @@ body{
   <br>
 			   <span id="yun2" class="span2" style="display:none">
 			   
-1.别问我有多喜欢你，春梦对象都是你。<br/>
-		   			   
-           
-2.以前只知道想要活下去，但不知道为什么要活下去，现在我知道了，就是想要和你一起活下去 。<br/>
 
-
-3.世界上总有一个人满足我对女人的所有幻想，那个人就是你。 <br/>
-			   
-			   
-4.想给你借个未来，有你的温情和我全部的热爱。 <br/>
 			 
 		     </span> <br/>
 		      
