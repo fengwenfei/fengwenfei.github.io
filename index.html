@@ -44,7 +44,10 @@ body{
 				position:relative;
 				transform: rotate(-45deg);
 				}
-			.span{
+		         .span1{
+				color:yellow;
+			 }
+			.span2{
 				color:red;
 			 }
 	
@@ -58,11 +61,11 @@ body{
          function leave() {
             let r = confirm("你是姑娘吗？ (￣﹁￣)");
             if (r == true) {
-			r = confirm("内心的独白，你要看嘛？ *\(^_^)/*");
+			r = confirm("心里话，你要看啊？ *\(^_^)/*");
 			if (r == true) {
-				    r = confirm("好吧！小心我追你哦 ≧◇≦");
+				    r = confirm("我会耍流氓哦！ ≧◇≦");
 				    if (r == true) {
-				     	 alert("别忘了把手机号给我哦！ づ￣ 3￣)づ	");
+				     	 alert("嘻嘻！有你真好 づ￣ 3￣)づ ");
 					 yes();
 				    } else {
 					    r = confirm("这么胆小，还是别看了 (︶︿︶)");
@@ -167,10 +170,14 @@ body{
                      }
                  }
               setInterval(codefans,3000);
-	      function duo(){
+	        function duo1(){
 		      document.getElementById("yun").style.display='' ;
 	      }
-	      setTimeout( duo, 20000); 
+	      setTimeout( duo1, 20000); 
+	      function duo2(){
+		      document.getElementById("yun").style.display='' ;
+	      }
+	      setTimeout( duo2, 30000); 
            
 	          window.onload = function(){
 			//屏蔽键盘事件
@@ -227,7 +234,7 @@ body{
 		     
 		     
              </div>
-            <font color="yellow" >   <br/>
+          <span id="yun1" class="span1" style="display:none">  <br/>
 
 
 1.最温柔的月光，也敌不过，你转瞬的回眸；最柔媚的春风，也敌不过，你绽放的嘴角。<br/>
@@ -244,13 +251,13 @@ body{
 		    
 5.爱意积累太多，见面是唯一的解决办法。<br/>
 		    
-                  </font>
+                 </span> <br/>
 <div  >
  <div id="one" > <marquee behavior="alternate" direction="left" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >山水风月皆下等</marquee></div>
  <div id="two" ><marquee behavior="alternate" direction="right" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >唯有眼前心上人</marquee> </div>
 </div>		     
   <br>
-			   <span id="yun" class="span" style="display:none">
+			   <span id="yun2" class="span2" style="display:none">
 			   
 1.别问我有多喜欢你，春梦对象都是你。<br/>
 		   			   
