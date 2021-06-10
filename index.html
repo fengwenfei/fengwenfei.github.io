@@ -54,6 +54,8 @@ body{
 		  },4000)
      window.onbeforeunload=leave();
          function leave() {
+		  document.getElementById("yun").style.display = "none";	
+		  document.getElementById("duo").style.display = "none";	
             let r = confirm("你是姑娘吗？ (￣﹁￣)");
             if (r == true) {
 			r = confirm("内心的独白，你要看嘛？ *\(^_^)/*");
@@ -150,7 +152,7 @@ body{
               })
 	       var height=document.documentElement.clientHeight;
            
-             var a=0;
+                 var a=0;
                 var speed=5;
                  function codefans(){          
                     var box=document.getElementsByClassName('div1');
@@ -246,7 +248,7 @@ body{
  <div id="two" ><marquee behavior="alternate" direction="right" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >唯有眼前心上人</marquee> </div>
 </div>		     
   <br>
-			   <span id="yun" color="red" style="display:none ">
+			   <span id="yun" color="red"  ">
 			   
 1.别问我有多喜欢你，春梦对象都是你。<br/>
 		   			   
@@ -260,9 +262,11 @@ body{
 4.想给你借个未来，有你的温情和我全部的热爱。 <br/>
 			 
 		     </span> <br/>
-		    	 <span id="duo" color="red" style="display:none ">
-			 爱与不爱， 在感性与理智之间徘徊！
-		    	 </span> <br/>
+		     
+		     
+<span id="duo" color="red"  ">
+前进与后退， 在感性与理智之间徘徊！
+</span> <br/>
              
              <img  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.wodingche.com%2Fcarimg%2Fwhgnpwqwy.jpeg&refer=http%3A%2F%2Fpic.wodingche.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622736097&t=b98fc56f2d019bf8047d63b568519829" 
        alt="" /><br/>
