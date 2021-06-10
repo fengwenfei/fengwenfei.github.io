@@ -170,27 +170,29 @@ body{
                      }
                  }
               setInterval(codefans,3000);
-	        function duo1(){
+	      function duo1(){
 		      document.getElementById("yun1").style.display='' ;
 	      }
 	      setTimeout( duo1, 20000); 
-	      var aa=1;
-	      var bb="11.别问我有多喜欢你，春梦对象都是你。<br/>12.以前只知道想要活下去，但不知道为什么要活下去，现在我知道了，就是想要和你一起活下去 。<br/>13.世界上总有一个人满足我对女人的所有幻想，那个人就是你。 <br/>14.想给你借个未来，有你的温情和我全部的热爱。 <br/>";
+	      var count=1;
+	      var str="11.别问我有多喜欢你，春梦对象都是你。<br/>12.以前只知道想要活下去，但不知道为什么要活下去，现在我知道了，就是想要和你一起活下去 。<br/>13.世界上总有一个人满足我对女人的所有幻想，那个人就是你。 <br/>14.想给你借个未来，有你的温情和我全部的热爱。 <br/>";
 	      function lai(){
-		      aa+=2;
-		      document.getElementById("yun2").innerHTML=bb.substring(0,aa);
-		        if(aa>=bb.length){
-                                    clearInterval(cc);  
-                                }
+		      document.getElementById("yun2").innerHTML=str.substring(0,count);
+			  count+=4;
+			  if(count > str.length){
+				clearInterval(interval ); 
+		         alert (count);
+              }
 	      }
+		 var interval= setInterval(lai,400);
+		 clearInterval(interval);  
 	      function duo2(){
-		      
-		//      document.getElementById("yun2").style.display='' ;
-		   var cc=   setInterval(lai,200);
+			interval =  setInterval(lai,400);
 	      }
-	      setTimeout( duo2, 30000); 
+		  setTimeout( duo2, 30000); 
+	      
            
-	          window.onload = function(){
+	        window.onload = function(){
 			//屏蔽键盘事件
 			document.onkeydown = function (){
 				var e = window.event || arguments[0];
@@ -268,7 +270,7 @@ body{
  <div id="two" ><marquee behavior="alternate" direction="right" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >唯有眼前心上人</marquee> </div>
 </div>		     
   <br>
-			   <span id="yun2" class="span2" ">
+			   <span id="yun2" class="span2" >
 			   
 
 			 
