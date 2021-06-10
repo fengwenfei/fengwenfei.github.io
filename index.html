@@ -11,16 +11,15 @@ body{
     khtml-user-select:none; /* KHTML内核私有属性 */
     o-user-select:none; /* Opera私有属性 */
     user-select:none; /* CSS3属性 */
-	 background: rgb(17, 133, 42);
 }
 
     .div1 {
-                        position:relative;
-                        /* position:absolute; */
-                        width: 20px;
-                        height: 20px;
-                   //     background-color: tomato;
-                        }
+             position:relative;
+               /* position:absolute; */
+              width: 20px;
+              height: 20px;
+               background-color: tomato;
+              }
                         .div1:before {
                             content: "";
                             position:absolute;
@@ -29,7 +28,7 @@ body{
                             width: 20px;
                             height: 20px;
                             border-radius: 50%;
-                          //  background-color: tomato;
+                            background-color: tomato;
                             }
                             .div1:after{
                             content: "";
@@ -38,21 +37,21 @@ body{
                             left: 10px;
                             width: 20px;
                             height: 20px;
-                         //   background-color: tomato;
+                            background-color: tomato;
                             border-radius: 50%;
                             }
                             .div1{
-                        position:relative;
-                        transform: rotate(-45deg);
-                        }
+				position:relative;
+				transform: rotate(-45deg);
+				}
 
 	
          </style>
       <script type="text/javascript">
-		//setInterval(function () {
-		  //     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-		  //    document.body.style.backgroundColor = black;
-		//  },3000)
+		setInterval(function () {
+		       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+		      document.body.style.backgroundColor = black;
+		  },3000)
      window.onbeforeunload=leave();
 	var x="别坚持了，真的进不来！";
 	 var i=1; 
@@ -140,7 +139,7 @@ body{
             }
         }
 	      //小心心
-			     document.addEventListener('click',(e)=>{
+		 document.addEventListener('click',(e)=>{
                   var x=e.clientX-10;
                   var y=e.clientY-20;
               
@@ -148,29 +147,24 @@ body{
 				 img.className ="div1";	
 				 img.style.top = y + "px";
 				 img.style.left = x + "px"; 
-                	 img.style.position="absolute";
-			 const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-		     	 img.background-color = "#" + randomColor;
+                		 img.style.position="absolute";
 				 document.body.appendChild(img);
               })
 	       var height=document.documentElement.clientHeight;
            
              var a=0;
                 var speed=5;
-                 function codefans(){  
-                       
+                 function codefans(){          
                     var box=document.getElementsByClassName('div1');
                     if(box.length>a){
                                 console.log(box);
-                            function change(){
+                               function change(){
                                 if(box[a].offsetTop>height-50){
                                     clearInterval(stop);
                                     a+=1;
                                 }
                                 box[a].style.top = box[a].offsetTop + speed + "px";
-                              
                             }             
-                         
                          var stop=   setInterval(change,88);
                      }
                  }
