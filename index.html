@@ -1,7 +1,7 @@
 <html >
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <title>欢迎呀</title>
+         <title>欢迎光临</title>
          <style type="text/css">
 		 
 body{
@@ -61,7 +61,8 @@ body{
 				    r = confirm("好吧！小心我追你哦 ≧◇≦");
 				    if (r == true) {
 				     	 alert("别忘了把手机号给我哦！ づ￣ 3￣)づ	");
-					  return true;
+					 document.getElementById("yun").style.display = "";	
+					 yes();
 				    } else {
 					    r = confirm("这么胆小，还是别看了 (︶︿︶)");
 					    if (r == true) {
@@ -69,6 +70,7 @@ body{
 						      no();
 					    } else {
 						      alert("识时务，我喜欢！>3<");	
+						     document.getElementById("duo").style.display = "";
 						      yes();
 					    }
 				    }					
@@ -86,8 +88,15 @@ body{
 				    }
 			}
             } else {
-		 alert("抱歉了哥们！(T_T)");
-		   no();
+		  r = confirm("怪不好意思的哦，确定要进？");
+				    if (r == true) {
+				        alert("好吧，请进！"); 
+					 yes();
+					
+				    } else {
+					  alert("拜拜！");   
+					  no();       
+				    }
             }
         }
 	function yes(){
@@ -236,12 +245,13 @@ body{
  <div id="one" > <marquee behavior="alternate" direction="left" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >山水风月皆下等</marquee></div>
  <div id="two" ><marquee behavior="alternate" direction="right" scrollamount="88" scrolldelay="500" bgcolor="pink" width=100% hspace=10 vspace=10 >唯有眼前心上人</marquee> </div>
 </div>		     
-                   <font color="red" ><br>
+  <br>
+			   <span id="yun" color="red" style="display:none ">
 			   
 1.别问我有多喜欢你，春梦对象都是你。<br/>
 		   			   
            
-2.以前知道想要活下去，但不知道为什么要活下去，现在我知道了，我想要和你一起活下去 。<br/>
+2.以前只知道想要活下去，但不知道为什么要活下去，现在我知道了，就是想要和你一起活下去 。<br/>
 
 
 3.世界上总有一个人满足我对女人的所有幻想，那个人就是你。 <br/>
@@ -249,8 +259,10 @@ body{
 			   
 4.想给你借个未来，有你的温情和我全部的热爱。 <br/>
 			 
-		     </font><br/>
-		    	
+		     </span> <br/>
+		    	 <span id="duo" color="red" style="display:none ">
+			 爱与不爱， 在感性与理智之间徘徊！
+		    	 </span> <br/>
              
              <img  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.wodingche.com%2Fcarimg%2Fwhgnpwqwy.jpeg&refer=http%3A%2F%2Fpic.wodingche.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622736097&t=b98fc56f2d019bf8047d63b568519829" 
        alt="" /><br/>
