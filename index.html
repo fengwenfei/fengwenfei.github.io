@@ -53,25 +53,48 @@ body{
 		      document.body.style.backgroundColor ="#"+randomColor; 
 		  },4000)
      window.onbeforeunload=leave();
-	var x="别坚持了，真的进不来！";
-	 var i=1; 
          function leave() {
-            let r = confirm("我有好多好多的话想和你说呀！");
+            let r = confirm("你是姑娘吗？ (￣﹁￣)");
             if (r == true) {
-                r = confirm("我好喜欢你，你呢？");
-                if (r == true) {
-                    alert("嘻嘻，有你真好！");
-                    return true;
-                } else {
-                    r = confirm("没有可进不来哦！");
-                    if (r == true) {
-                      yes();
-                    } else {
-                      yes();
-                    }
-                }
+			r = confirm("内心的独白，你要看嘛？ *\(^_^)/*");
+			if (r == true) {
+				    r = confirm("好吧！小心我追你哦 ≧◇≦");
+				    if (r == true) {
+				     	 alert("别忘了把手机号给我哦！ づ￣ 3￣)づ	");
+					  return true;
+				    } else {
+					    r = confirm("这么胆小，还是别看了 (︶︿︶)");
+					    if (r == true) {
+						     alert("拜拜了您类！:-x");
+						      no();
+					    } else {
+						      alert("识时务，我喜欢！>3<");	
+						      yes();
+					    }
+				    }					
+			} else {
+				    r = confirm("那就不用进来了！ (︶︿︶)");
+				    if (r == true) {
+				      no();
+				    } else {
+					      r = confirm("看了不后悔 @_@");
+					    if (r == true) {
+						 alert("爱妃，请进 :-*");
+					    } else {
+						no();
+					    }
+				    }
+			}
             } else {
-		 alert("那拜拜了！");
+		 alert("抱歉了哥们！(T_T)");
+		   no();
+            }
+        }
+	function yes(){
+		return true;
+	 }
+	
+        function no(){			  
 		    var u = navigator.userAgent
 		    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 		    var isSafari = u.toLowerCase().indexOf('safari') != -1
@@ -102,41 +125,7 @@ body{
 			window.opener = null;
 			window.open("","_self").close()
 			window.location.href = 'about:blank';
-		    }
-            }
-        }
-	
-        function yes(){
-            r = confirm("有？");
-            if (r == true) {
-		if(i>3){
-			 alert("让你喜欢可真难呀！");
-		}else{
-			 alert("哈哈，有点强人所难啊！");
-		}
-                return true;
-            } else {
-		if(i%3==0){
-			 r = confirm(x);
-			if(r==true){
-			  yes();
-			}else{
-			  no();
-			}
-		}else{
-		 no();
-                }
-            }
-        }
-        function no(){	
-            r = confirm("没有？");
-            if (r == true) {
-		  i++;
-                  yes();
-            } else {
-	 	  i++;
-                  yes();
-            }
+		    } 
         }
 	      //小心心
 		 document.addEventListener('click',(e)=>{
