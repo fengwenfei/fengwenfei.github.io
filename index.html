@@ -77,47 +77,20 @@ body{
 		   },4000)
      window.onbeforeunload=leave();
          function leave() {
-            let r = confirm("你是姑娘吗？ (￣﹁￣)");
+            let r = confirm("您来了，快请进！ (￣﹁￣)");
             if (r == true) {
-			r = confirm("哥的心里话，你要看啊？ *\(^_^)/*");
-			if (r == true) {
-				    r = confirm("看了，我会耍流氓哦！ ≧◇≦");
-				    if (r == true) {
-				     	 alert("嘻嘻！等着呀 づ￣ 3￣)づ ");
+			r = confirm("是母的？ ");
+			if (r == true) { 
+				      alert("有个恋爱想和你谈 づ￣ 3￣)づ ");
+					 yes();			   
+			} else {		   
+				     alert("有个朋友想和你认识");	 
 					 yes();
-				    } else {
-					    r = confirm("这么胆小，还是别看了 (︶︿︶)");
-					    if (r == true) {
-						     alert("拜拜了您类！:-x");
-						      no();
-					    } else {
-						      alert("识时务，我喜欢！>3<");	 
-						      yes();
-					    }
-				    }					
-			} else {
-				    r = confirm("那就不用进来了！ (︶︿︶)");
-				    if (r == true) {
-				      no();
-				    } else {
-					      r = confirm("看了不后悔 @_@");
-					    if (r == true) {
-						 alert("爱妃，请进 :-*");
-					    } else {
-						no();
-					    }
-				    }
+		    
 			}
             } else {
-		  r = confirm("怪不好意思的哦，确定要进？");
-				    if (r == true) {
-				        alert("好吧，请进！"); 
-					 yes();
-					
-				    } else {
-					  alert("拜拜！");   
-					  no();       
-				    }
+		 alert(" (︶︿︶)");	 
+		 no();
             }
         }
 	function yes(){
