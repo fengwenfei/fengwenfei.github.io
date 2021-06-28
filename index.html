@@ -68,6 +68,17 @@ body{
 			.span2{
 				color:red;
 			 }
+		 	.content{
+				width: 40px;height: 40px;
+				background-color: #0000FF;border-radius: 50%;
+			 }
+			 .content p{
+				width: 40px;
+				font-weight:normal;
+				 height: 40px;line-height: 40px;
+				 color: #000;text-align: center;
+			
+			 }
 	
          </style>
       <script type="text/javascript">
@@ -184,6 +195,15 @@ body{
 	      
            
 	        window.onload = function(){
+			
+				var cont=document.getElementById("dianwo");
+			    cont.onmouseover =function(){
+				var wig=document.body.clientWidth-40;
+	  			var hig= document.body.clientHeight-40;
+				cont.style.top = Math.floor(Math.random()*hig) + "px";
+				cont.style.left = Math.floor(Math.random()*wig) + "px";
+				cont.style.position="absolute";
+			   }
 			//屏蔽键盘事件
 			document.onkeydown = function (){
 				var e = window.event || arguments[0];
@@ -262,12 +282,11 @@ body{
 </div>		     
   <br>
 			   <span id="yun2" class="span2" >
-			   
-
-			 
-		     </span> <br/>
+		      		</span> <br/>
 		      
-             
+             <div class="content" id="dianwo">
+					<p>点我</p>
+			  </div>
              <img  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.wodingche.com%2Fcarimg%2Fwhgnpwqwy.jpeg&refer=http%3A%2F%2Fpic.wodingche.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622736097&t=b98fc56f2d019bf8047d63b568519829" 
        alt="" /><br/>
  
