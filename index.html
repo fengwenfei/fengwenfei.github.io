@@ -82,10 +82,10 @@ body{
 	
          </style>
       <script type="text/javascript">
-		 setInterval(function () {
-		        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-		       document.getElementById("hh").style.color ="#"+randomColor; 
-		   },4000)
+		//  setInterval(function () {
+		//         const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+		//        document.getElementById("hh").style.color ="#"+randomColor; 
+		//    },4000)
      window.onbeforeunload=leave();
          function leave() {
             let r = confirm("您来了，快请进！ (￣﹁￣)");
@@ -157,7 +157,10 @@ body{
            
                  var a=0;
                 var speed=5;
-                 function codefans(){          
+                 function codefans(){     
+					if(a==6){
+						setTimeout( duo2, 2000); 
+					}     
                     var box=document.getElementsByClassName('div1');
                     if(box.length>a){
                                 console.log(box);
@@ -165,9 +168,7 @@ body{
                                 if(box[a].offsetTop>height-50){
                                     clearInterval(stop);
                                     a+=1;
-					if(a==10){
-						setTimeout( duo2, 3000); 
-					}
+					
                                 }
                                 box[a].style.top = box[a].offsetTop + speed + "px";
                             }             
@@ -198,15 +199,17 @@ body{
 	      
            
 	        window.onload = function(){
-			var haha={"哈哈","嘿嘿","点不到","么么大","嘎嘎","想你哦","爱你"}
+				var hahaha=["哈哈","嘿嘿","秒呀","么么","嘎嘎","想你","爱你"];
 			var cont=document.getElementById("dianwo");
-			   cont.onmouseover =function(){
-				var wig=document.body.clientWidth-40;
-	  			var hig= document.body.clientHeight-40;
-				cont.style.top = Math.floor(Math.random()*hig) + "px";
-				cont.style.left = Math.floor(Math.random()*wig) + "px";
-				cont.style.position="absolute";
-				   document.getElementById("dianwo").childNodes[0].innerHTML=haha[Math.floor(Math.random()*6)];
+			    cont.onmouseover =function(){
+				
+					var wig=document.body.clientWidth-40;
+					var hig= document.body.clientHeight-40;
+					cont.style.top = Math.floor(Math.random()*hig) + "px";
+					cont.style.left = Math.floor(Math.random()*wig) + "px";
+					cont.style.position="absolute";
+					document.getElementById("dian").innerText=hahaha[Math.floor(Math.random()*6)];
+		       		document.getElementById("dianwo").style.backgroundColor ="#"+Math.floor(Math.random() * 16777215).toString(16); 
 			   }
 			//屏蔽键盘事件
 			document.onkeydown = function (){
@@ -289,7 +292,7 @@ body{
 		      		</span> <br/>
 		      
              <div class="content" id="dianwo">
-					<p>点我</p>
+				<p id="dian" >点我</p>
 			  </div>
              <img  src="https://gitee.com/feng-wenfei/mypages/raw/master/4228.gif" 
        alt="爱你哦" /><br/>
