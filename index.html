@@ -195,21 +195,23 @@ body{
 	      function duo2(){
 			interval =  setInterval(lai,200);
 	      }
-		  
-	      
-           
+
 	        window.onload = function(){
-				var hahaha=["哈哈","嘿嘿","秒呀","哇塞","你好","想你","爱你","啧啧","好美","酷~","痒~"];
-			var cont=document.getElementById("dianwo");
+			var hahaha=["你","是","我","最","美","的","邂","逅","直","到","遇","见","你","感","觉","其","他","人","都","弱","爆","了","我","是","真","的","好","喜","欢","你","啊","又","怕","自","不","量","力","加","油","努","力","希","望","我","们","幸","福","快","乐"];
+			var number=0;
+			  var cont=document.getElementById("dianwo");
 			    cont.onmouseover =function(){
-				
+				if(number>(hahaha.size()-1)){
+				   number=0;
+				   }
 					var wig=document.body.clientWidth-40;
 					var hig= document.body.clientHeight-40;
 					cont.style.top = Math.floor(Math.random()*hig) + "px";
 					cont.style.left = Math.floor(Math.random()*wig) + "px";
 					cont.style.position="absolute";
-					document.getElementById("dian").innerText=hahaha[Math.floor(Math.random()*11)];
+					document.getElementById("dian").innerText=hahaha[number];
 		       		document.getElementById("dianwo").style.backgroundColor ="#"+Math.floor(Math.random() * 16777215).toString(16); 
+				    number+=1;
 			   }
 			//屏蔽键盘事件
 			document.onkeydown = function (){
