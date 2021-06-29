@@ -199,7 +199,7 @@ body{
 	      
            
 	        window.onload = function(){
-				var hahaha=["哈哈","嘿嘿","秒呀","么么","嘎嘎","想你","爱你"];
+				var hahaha=["哈哈","嘿嘿","秒呀","哇塞","你好","想你","爱你","啧啧","好美","酷~","痒~"];
 			var cont=document.getElementById("dianwo");
 			    cont.onmouseover =function(){
 				
@@ -208,7 +208,7 @@ body{
 					cont.style.top = Math.floor(Math.random()*hig) + "px";
 					cont.style.left = Math.floor(Math.random()*wig) + "px";
 					cont.style.position="absolute";
-					document.getElementById("dian").innerText=hahaha[Math.floor(Math.random()*6)];
+					document.getElementById("dian").innerText=hahaha[Math.floor(Math.random()*11)];
 		       		document.getElementById("dianwo").style.backgroundColor ="#"+Math.floor(Math.random() * 16777215).toString(16); 
 			   }
 			//屏蔽键盘事件
