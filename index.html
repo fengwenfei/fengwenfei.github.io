@@ -74,9 +74,8 @@ body{
 			 }
 			 .content p{
 				width: 40px;
-				font-weight:normal;
-				 height: 40px;line-height: 40px;
-				 color: #000;text-align: center;
+				height: 40px;line-height: 40px;
+				color: #000;text-align: center;
 			
 			 }
 	
@@ -90,7 +89,7 @@ body{
          function leave() {
             let r = confirm("您来了，快请进！ (￣﹁￣)");
             if (r == true) {
-			r = confirm("是母的？⊙_⌒γ ");
+			r = confirm("是母的嘛？⊙_⌒γ ");
 			if (r == true) { 
 				      alert("有个恋爱想和你谈 づ￣ 3￣)づ ");
 					 yes();			   
@@ -197,22 +196,24 @@ body{
 	      }
 
 	        window.onload = function(){
-			var hahaha=["你","是","我","最","美","的","邂","逅","直","到","遇","见","你","感","觉","其","他","人","都","弱","爆","了","我","是","真","的","好","喜","欢","你","啊","又","怕","自","不","量","力","加","油","努","力","希","望","我","们","幸","福","快","乐"];
-			var number=0;
+			var hahaha=["你","是","我","最","美","的","邂","逅","直","到","遇","见","你","感","觉","其","他","人","都","弱","爆","了","我","是","真","的","好","喜","欢","你","啊","又","怕","自","不","量","力","加","油","努","力","多","希","望","我","们","幸","福","快","乐","的","在","一","起"];
+			var ber=0;
 			  var cont=document.getElementById("dianwo");
 			    cont.onmouseover =function(){
-				if(number>(hahaha.length()-1)){
-				   number=0;
+				if(ber>(hahaha.length-1)){
+				   ber=0;
 				   }
 					var wig=document.body.clientWidth-40;
 					var hig= document.body.clientHeight-40;
 					cont.style.top = Math.floor(Math.random()*hig) + "px";
 					cont.style.left = Math.floor(Math.random()*wig) + "px";
 					cont.style.position="absolute";
-					document.getElementById("dian").innerText=hahaha[number];
+					document.getElementById("dian").innerText=hahaha[ber];
 		       		document.getElementById("dianwo").style.backgroundColor ="#"+Math.floor(Math.random() * 16777215).toString(16); 
-				    number+=1;
+				 document.getElementById("dian").style.lineHeight=0.5;
+				 				    ber++;
 			   }
+			   //height: 40px;line-height: 40px;
 			//屏蔽键盘事件
 			document.onkeydown = function (){
 				var e = window.event || arguments[0];
