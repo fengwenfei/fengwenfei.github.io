@@ -87,17 +87,31 @@ body{
 		//    },4000)
      window.onbeforeunload=leave();
          function leave() {
-            let r = confirm("您来了，快请进！ (￣﹁￣)");
+           let r = confirm("您来了，快请进！ (￣﹁￣)");
             if (r == true) {
-			r = confirm("是我想要的那个她嘛？⊙_⌒γ ");
+			r = confirm("你是女孩嘛？⊙_⌒γ ");
 			if (r == true) { 
-				      alert("有个恋爱想和你谈 づ￣ 3￣)づ ");
-					 yes();			   
-			} else {		   
-				     alert("有个朋友想和你认识 ⊙ω⊙");	 
-					 yes();
-		    
-			}
+					 r = confirm("那你有男朋友嘛？⊙_⌒γ ");
+			  		 if (r == true) { 
+							r = confirm("那你介不介意换一个？⊙_⌒γ ");
+							if (r == true) { 
+								r = confirm("那你介不介意多一个？⊙_⌒γ ");
+								if (r == true) { 
+										alert(" 那当我没问  (︶︿︶) ");
+										window.open("https://www.bilibili.com/");
+										window.close();
+								}else{
+									alert("找我 ");
+									yes();	
+								}		   	
+							}else{
+								alert("找我 ");
+								yes();	
+							}		   	
+					}else{
+						alert("有个恋爱想和你谈 づ￣ 3￣)づ ");
+					     yes();	
+					}		   		   
             } else {
 		 alert(" (︶︿︶)");	 
 		 no();
